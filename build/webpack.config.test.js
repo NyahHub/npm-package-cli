@@ -1,6 +1,3 @@
-/**
- * Created by hamupp on 2018/01/26.
- */
 const path = require("path");
 const webpack = require("webpack");
 const uglify = require("uglifyjs-webpack-plugin");
@@ -27,6 +24,17 @@ module.exports = {
         { loader: "css-loader" },
         { loader: "less-loader" }
       ]
+    },
+    {
+      test: /\.css$/,
+      use: [
+        { loader: "style-loader" },
+        { loader: "css-loader" },
+      ],
+    },
+    {
+      test: /\.(woff|svg|eot|ttf|cur)\??.*$/,
+      loader: 'url-loader?limit=1024'
     },
     {
       test: /\.js$/,

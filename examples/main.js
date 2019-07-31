@@ -6,6 +6,6 @@ import Hello from '../src/index.js';
 import App from './app.vue';
 Vue.component('Hello', Hello);
 new Vue({
-  el: '#appExample1',
+  el: '#app',
   render: h => h(App)
 });

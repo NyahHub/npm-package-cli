@@ -23,9 +23,6 @@ export default {
   },
   methods: {
 
-  },
-  created() {
-    let that = this;
   }
 }
 </script>

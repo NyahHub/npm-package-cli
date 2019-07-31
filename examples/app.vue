@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="left-top-nav">
+    <div class="demo">
       <Hello :data="msg"></Hello>
     </div>
   </div>
